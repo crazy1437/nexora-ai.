@@ -1,4 +1,6 @@
 
+import Link from "next/link";
+
 const services = [
   {
     number: "01",
@@ -36,15 +38,15 @@ export default function Home() {
   return (
     <main className="overflow-hidden bg-[#08080b] text-white">
       <nav className="relative z-20 mx-auto flex max-w-7xl items-center justify-between px-6 py-7">
-        <a href="#" className="text-2xl font-black tracking-[.17em]">
+        <Link href="/" className="text-2xl font-black tracking-[.17em]">
           NEXORA<span className="text-red-500">.</span>
           <span className="ml-2 text-[9px] font-medium tracking-[.3em] text-gray-500">
             AI
           </span>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-9 text-sm text-gray-400 md:flex">
-          <a href="#services" className="hover:text-white">Services</a>
+          <Link href="/services" className="hover:text-white">Services</Link>
           <a href="#approach" className="hover:text-white">Approach</a>
           <a href="#about" className="hover:text-white">About</a>
         </div>
@@ -84,12 +86,12 @@ export default function Home() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="#services"
+              <Link
+                href="/services"
                 className="rounded-full bg-red-600 px-7 py-4 text-sm font-semibold transition hover:bg-red-500"
               >
                 Explore Solutions ↗
-              </a>
+              </Link>
               <a
                 href="#contact"
                 className="rounded-full border border-white/15 px-7 py-4 text-sm transition hover:border-white/50"
@@ -153,9 +155,9 @@ export default function Home() {
                   {service.description}
                 </p>
                 <div className="mt-8 h-px w-full bg-white/10" />
-                <span className="mt-5 inline-block text-sm text-red-400">
+                <Link href="/services" className="mt-5 inline-block text-sm text-red-400 hover:text-red-300">
                   Explore capabilities ↗
-                </span>
+                </Link>
               </article>
             ))}
           </div>
