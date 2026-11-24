@@ -46,17 +46,26 @@ export default function Home() {
         </Link>
 
         <div className="hidden items-center gap-9 text-sm text-gray-400 md:flex">
-          <Link href="/services" className="hover:text-white">Services</Link>
-          <a href="#approach" className="hover:text-white">Approach</a>
-          <a href="#about" className="hover:text-white">About</a>
+          <Link href="/services" className="hover:text-white">
+            Services
+          </Link>
+          <a href="#approach" className="hover:text-white">
+            Approach
+          </a>
+          <a href="#about" className="hover:text-white">
+            About
+          </a>
+          <Link href="/contact" className="hover:text-white">
+            Contact
+          </Link>
         </div>
 
-        <a
-          href="#contact"
+        <Link
+          href="/contact"
           className="rounded-full border border-red-500/50 px-5 py-3 text-xs font-semibold tracking-wide transition hover:bg-red-600"
         >
-          LET'S TALK ↗
-        </a>
+          LET&apos;S TALK ↗
+        </Link>
       </nav>
 
       <section className="relative flex min-h-[760px] items-center">
@@ -77,7 +86,7 @@ export default function Home() {
               <br />
               the ordinary.
               <br />
-              <span className="text-gradient">Automate what's next.</span>
+              <span className="text-gradient">Automate what&apos;s next.</span>
             </h1>
 
             <p className="mt-8 max-w-xl text-base leading-8 text-gray-400 sm:text-lg">
@@ -92,12 +101,12 @@ export default function Home() {
               >
                 Explore Solutions ↗
               </Link>
-              <a
-                href="#contact"
+              <Link
+                href="/contact"
                 className="rounded-full border border-white/15 px-7 py-4 text-sm transition hover:border-white/50"
               >
                 Start a Project
-              </a>
+              </Link>
             </div>
 
             <p className="mt-12 text-[10px] tracking-[.25em] text-gray-600">
@@ -210,7 +219,7 @@ export default function Home() {
       <section id="contact" className="relative px-6 py-32 text-center">
         <div className="hero-glow absolute inset-0 opacity-70" />
         <div className="relative mx-auto max-w-3xl">
-          <p className="text-xs tracking-[.35em] text-red-400">LET'S CREATE WHAT'S NEXT</p>
+          <p className="text-xs tracking-[.35em] text-red-400">LET&apos;S CREATE WHAT&apos;S NEXT</p>
           <h2 className="mt-7 text-4xl font-semibold sm:text-6xl">
             Your next big idea
             <br />
@@ -218,17 +227,14 @@ export default function Home() {
           </h2>
           <p className="mx-auto mt-7 max-w-xl leading-7 text-gray-400">
             Have a workflow to improve or a digital idea to bring to life?
-            Let's start a conversation.
+            Let&apos;s start a conversation.
           </p>
-          <a
-            href="mailto:YOUR_EMAIL@example.com"
+          <Link
+            href="/contact"
             className="mt-10 inline-block rounded-full bg-red-600 px-8 py-4 text-sm font-semibold transition hover:bg-red-500"
           >
             Contact NEXORA AI ↗
-          </a>
-          <p className="mt-4 text-xs text-gray-600">
-            Replace the placeholder email before publishing.
-          </p>
+          </Link>
         </div>
       </section>
 
@@ -237,7 +243,7 @@ export default function Home() {
           <p className="font-bold tracking-[.2em] text-white">
             NEXORA<span className="text-red-500">.</span> AI
           </p>
-          <p>© 2026 NEXORA AI. Built for what's next.</p>
+          <p>© 2026 NEXORA AI. Built for what&apos;s next.</p>
           <p>Intelligent Automation. Measurable Growth.</p>
         </div>
       </footer>
