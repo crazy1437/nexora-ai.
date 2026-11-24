@@ -152,7 +152,7 @@ export default function Home() {
           Get in touch ↗
         </a>
         <p className="mt-20 text-sm text-gray-600">
-          © {new Date().getFullYear()} NEXORA AI. Built for what's next.
+          © 2026 NEXORA AI. Built for what's next.
         </p>
       </section>
     </main>
